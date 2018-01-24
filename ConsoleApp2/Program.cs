@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* Name: Jon Sulcer
+ * Date: 1/24/18
+ * File: program.cs
+ * Description: Git Test
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +18,17 @@ namespace ConsoleApp2
         {
             Console.WriteLine("Hello World!");
 
-            Console.WriteLine("I'm thinking of a number between 0 and 100.");
+            Console.WriteLine("Enter a number for x: ");
+            string xString = Console.ReadLine();
+            int x = Int32.Parse(xString);
+
+            Console.WriteLine("Enter a number for y: ");
+            string yString = Console.ReadLine();
+            int y = Int32.Parse(yString);
+
+            Console.WriteLine("I'm thinking of a number between " + x + " and " + y);
             Random rnd = new Random();
-            int number = rnd.Next(101);
+            int number = rnd.Next(x, y);
 
             Console.WriteLine("Try to guess what number I am thinking of: ");
             string guessString = Console.ReadLine();
