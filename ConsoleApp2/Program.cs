@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* Name: Jon Sulcer
+ * Date: 1/24/18
+ * File: program.cs
+ * Description: Git Test
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
